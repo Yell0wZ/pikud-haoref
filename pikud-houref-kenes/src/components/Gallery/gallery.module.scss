@@ -1,0 +1,107 @@
+.container {
+  @apply space-y-4;
+}
+
+.header {
+  @apply flex justify-between items-center;
+}
+
+.title {
+  @apply text-xl font-bold text-black;
+}
+
+.buttonGroup {
+  @apply flex gap-2;
+}
+
+.addButton {
+  @apply p-2 bg-orange-500 text-white rounded-full hover:bg-orange-600;
+}
+
+.searchContainer {
+  @apply flex items-center bg-white/80 backdrop-blur-sm rounded-lg p-3 mb-4 shadow border border-orange-200;
+}
+
+.searchIcon {
+  @apply h-5 w-5 text-orange-500 mr-2;
+}
+
+.searchInput {
+  @apply border-none bg-transparent flex-1 focus:outline-none;
+}
+
+.galleryGrid {
+  @apply grid grid-cols-2 gap-3;
+}
+
+.galleryCard {
+  @apply bg-white/80 backdrop-blur-sm border border-orange-200 rounded-xl shadow overflow-hidden cursor-pointer;
+}
+
+.imageContainer {
+  @apply h-40 bg-orange-100 overflow-hidden flex items-center justify-center;
+}
+
+.imagePlaceholder {
+  @apply text-orange-400 font-medium;
+}
+
+.cardContent {
+  @apply p-3;
+}
+
+.cardTitle {
+  @apply font-bold text-sm text-black truncate;
+}
+
+.cardDate {
+  @apply text-xs text-black/60;
+}
+
+.uploader {
+  @apply text-xs text-orange-500 mt-1 font-medium;
+}
+
+.modalOverlay {
+  @apply fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4;
+}
+
+.modal {
+  @apply bg-white rounded-xl shadow-lg w-full max-w-md;
+}
+
+.modalHeader {
+  @apply flex justify-between items-center p-4 border-b border-orange-200;
+
+  h3 {
+    @apply text-lg font-bold text-black;
+  }
+}
+
+.closeButton {
+  @apply text-black/50 hover:text-black/70;
+}
+
+.uploadForm {
+  @apply p-4 space-y-4;
+}
+
+.formGroup {
+  @apply space-y-1;
+
+  label {
+    @apply text-sm font-medium text-black/70;
+  }
+}
+
+.input {
+  @apply w-full px-3 py-2 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500/50;
+}
+
+.fileInput {
+  @apply w-full text-sm text-black/70 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100;
+}
+
+.uploadButton {
+  @apply w-full bg-orange-500 text-white py-2 px-4 rounded-lg font-medium hover:bg-orange-600 transition-colors;
+}

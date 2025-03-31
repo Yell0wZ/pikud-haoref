@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צ'אט WebSocket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">צ'אט WebSocket</div>
+        
+        <div class="connection-status" id="status">מתחבר...</div>
+        
+        <div class="user-info">
+            <button id="set-username">שמור שם</button>
+            <input type="text" id="username-input" placeholder="הכנס את שמך כאן">
+        </div>
+        
+        <div class="messages-container" id="messages"></div>
+        
+        <div class="input-container">
+            <button id="send-button">שלח</button>
+            <input type="text" id="message-input" placeholder="הקלד הודעה...">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

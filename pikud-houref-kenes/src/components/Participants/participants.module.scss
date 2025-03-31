@@ -1,0 +1,79 @@
+.container {
+  @apply space-y-4;
+}
+
+.title {
+  @apply text-xl font-bold text-black mb-2;
+}
+
+.searchContainer {
+  @apply flex items-center bg-white/80 backdrop-blur-sm rounded-lg p-3 mb-4 shadow border border-orange-200;
+}
+
+.searchIcon {
+  @apply h-5 w-5 text-orange-500 mr-2;
+}
+
+.searchInput {
+  @apply border-none bg-transparent flex-1 focus:outline-none;
+}
+
+.participantList {
+  @apply space-y-3;
+}
+
+.participantCard {
+  @apply bg-white/80 backdrop-blur-sm border border-orange-200 p-4 rounded-xl shadow;
+}
+
+.cardContent {
+  @apply flex items-start gap-3;
+}
+
+.avatar {
+  @apply w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center flex-shrink-0;
+}
+
+.avatarIcon {
+  @apply h-6 w-6 text-orange-500;
+}
+
+.details {
+  @apply flex-1;
+}
+
+.name {
+  @apply text-base font-bold text-black;
+}
+
+.organization {
+  @apply text-xs text-black/70 mt-2;
+}
+
+.contact {
+  @apply mt-2 pt-2 border-t border-orange-100;
+}
+
+.email {
+  @apply text-xs text-black/60 mb-2;
+}
+
+.socialLinks {
+  @apply flex items-center gap-3;
+}
+
+.socialText {
+  @apply text-xs text-black/70;
+}
+
+.socialButton {
+  @apply w-8 h-8 flex items-center justify-center rounded-full transition-all active:scale-95;
+
+  &.linkedin {
+    @apply bg-[#0077B5]/10 hover:bg-[#0077B5]/20;
+  }
+
+  &.whatsapp {
+    @apply bg-[#25D366]/10 hover:bg-[#25D366]/20;
+  }
+}

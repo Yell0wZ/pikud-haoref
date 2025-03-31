@@ -1,0 +1,77 @@
+.scheduleContainer {
+  @apply space-y-4;
+}
+
+.header {
+  @apply mb-2;
+
+  h2 {
+    @apply text-xl font-bold text-black;
+  }
+}
+
+.dayFilter {
+  @apply flex overflow-x-auto gap-2 pb-2;
+
+  button {
+    @apply px-3 py-1 rounded-full text-xs font-medium flex-shrink-0;
+
+    &.active {
+      @apply bg-orange-500 text-white;
+    }
+
+    &.inactive {
+      @apply bg-white/80 text-black/70 border border-orange-200;
+    }
+  }
+}
+
+.eventList {
+  @apply space-y-4;
+}
+
+.eventCard {
+  @apply bg-white/80 backdrop-blur-sm border border-orange-200 p-4 rounded-xl shadow;
+
+  .eventContent {
+    @apply flex items-start gap-2;
+
+    .indicator {
+      @apply flex-shrink-0 w-2 bg-orange-500 self-stretch rounded-full;
+    }
+
+    .details {
+      @apply flex-1;
+
+      .header {
+        @apply flex flex-wrap justify-between items-start mb-2;
+
+        .dateTime {
+          h3 {
+            @apply text-base font-bold text-black;
+          }
+
+          p {
+            @apply text-sm text-black/70;
+          }
+        }
+
+        .location {
+          @apply bg-orange-100 px-3 py-1 rounded-lg;
+
+          p {
+            @apply text-xs font-medium text-orange-700;
+          }
+        }
+      }
+
+      .title {
+        @apply text-sm font-semibold text-black mb-1;
+      }
+
+      .description {
+        @apply text-xs text-black/70;
+      }
+    }
+  }
+}

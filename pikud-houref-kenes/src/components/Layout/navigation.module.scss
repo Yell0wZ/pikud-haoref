@@ -1,0 +1,23 @@
+.navigation {
+  @apply bg-white/80 backdrop-blur-md border-t border-orange-200;
+}
+
+.container {
+  @apply max-w-md mx-auto flex justify-between p-2;
+}
+
+.navButton {
+  @apply flex flex-col items-center gap-1 rounded-lg py-2 px-2 text-black/70 hover:bg-orange-100;
+
+  &.active {
+    @apply text-orange-500 bg-orange-100;
+  }
+}
+
+.icon {
+  @apply h-5 w-5;
+}
+
+.label {
+  @apply text-xs font-medium;
+}

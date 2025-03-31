@@ -1,0 +1,39 @@
+.container {
+  @apply space-y-4;
+}
+
+.title {
+  @apply text-xl font-bold text-black mb-2;
+}
+
+.fileList {
+  @apply space-y-3;
+}
+
+.fileCard {
+  @apply bg-white/80 backdrop-blur-sm border border-orange-200 p-4 rounded-xl shadow cursor-pointer;
+}
+
+.cardContent {
+  @apply flex items-center gap-3;
+}
+
+.iconContainer {
+  @apply w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg flex items-center justify-center;
+}
+
+.icon {
+  @apply h-6 w-6 text-orange-500;
+}
+
+.details {
+  @apply flex-1;
+}
+
+.fileName {
+  @apply text-base font-bold text-black;
+}
+
+.fileDescription {
+  @apply text-xs text-black/70;
+}

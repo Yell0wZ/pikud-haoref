@@ -1,0 +1,29 @@
+.header {
+  @apply bg-white/80 backdrop-blur-md p-4 border-b border-orange-200 flex items-center justify-between;
+}
+
+.logoContainer {
+  @apply flex items-center;
+}
+
+.logo {
+  @apply w-8 h-8 bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg flex items-center justify-center mr-2;
+}
+
+.title {
+  @apply text-lg font-bold text-black;
+}
+
+.userIcon {
+  @apply w-8 h-8 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center flex-shrink-0;
+}
+
+.icon {
+  @apply h-5 w-5;
+  &:first-child {
+    @apply text-white;
+  }
+  &:last-child {
+    @apply text-orange-500;
+  }
+}

@@ -1,0 +1,111 @@
+.container {
+  @apply flex flex-col h-full;
+}
+
+.header {
+  @apply bg-white/80 backdrop-blur-sm p-4 rounded-t-xl border border-orange-200 mb-4;
+}
+
+.headerContent {
+  @apply flex items-center gap-3;
+}
+
+.iconContainer {
+  @apply w-10 h-10 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center flex-shrink-0;
+}
+
+.icon {
+  @apply h-5 w-5 text-orange-500;
+}
+
+.title {
+  @apply text-lg font-bold text-black;
+}
+
+.messageList {
+  @apply flex-1 space-y-3 mb-4 overflow-y-auto max-h-[60vh];
+}
+
+.messageContainer {
+  @apply flex;
+
+  &.self {
+    @apply justify-end;
+  }
+
+  &.other {
+    @apply justify-start;
+  }
+}
+
+.messageContent {
+  @apply max-w-[80%] p-3 rounded-xl;
+
+  &.self {
+    @apply bg-orange-500 text-white rounded-br-none;
+  }
+
+  &.other {
+    @apply bg-white/80 border border-orange-200 text-black rounded-bl-none;
+  }
+}
+
+.messageHeader {
+  @apply flex justify-between items-baseline mb-1;
+}
+
+.sender {
+  @apply text-xs font-bold;
+
+  &.self {
+    @apply text-white/90;
+  }
+
+  &.other {
+    @apply text-orange-500;
+  }
+}
+
+.time {
+  @apply text-xs ml-2;
+
+  &.self {
+    @apply text-white/70;
+  }
+
+  &.other {
+    @apply text-black/50;
+  }
+}
+
+.messageText {
+  @apply text-sm;
+
+  &.self {
+    @apply text-white;
+  }
+
+  &.other {
+    @apply text-black/80;
+  }
+}
+
+.inputContainer {
+  @apply bg-white/80 backdrop-blur-sm border border-orange-200 p-3 rounded-xl;
+}
+
+.inputWrapper {
+  @apply flex items-center gap-2;
+}
+
+.input {
+  @apply flex-1 relative;
+
+  input {
+    @apply w-full bg-white/80 border border-orange-200 rounded-full py-2 px-4 focus:outline-none focus:ring-1 focus:ring-orange-500 text-sm;
+  }
+}
+
+.sendButton {
+  @apply p-2 rounded-full bg-orange-500 text-white hover:bg-orange-600;
+}

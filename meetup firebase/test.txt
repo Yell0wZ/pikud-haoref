@@ -1,0 +1,3 @@
+curl -X GET \
+  "http://127.0.0.1:5001/download-eebb6/us-central1/getData/schedule" \
+  -H "Content-Type: application/json"
